@@ -7,8 +7,16 @@
       "name": "music video",
       "genre": "the band's catalog",
       "clips": [
-        { "title": "What Do You Want?", "src": "/media/music-video/wdyw.mp4", "permalink": "" },
-        { "title": "The Jostled Loop", "src": "/media/ambient-erosion/jostled-loop.mp4", "permalink": "" }
+        {
+          "title": "What Do You Want?",
+          "src": "/media/music-video/wdyw.mp4",
+          "permalink": ""
+        },
+        {
+          "title": "The Jostled Loop",
+          "src": "/media/ambient-erosion/jostled-loop.mp4",
+          "permalink": ""
+        }
       ]
     },
     {
@@ -25,8 +33,8 @@
     },
     {
       "id": "04",
-      "name": "telenovela",
-      "genre": "drama, layered writing",
+      "name": "chill vibes",
+      "genre": "the AI video content lane",
       "clips": []
     },
     {
@@ -34,9 +42,21 @@
       "name": "ambient erosion",
       "genre": "slow channel — the phoneme-drift lane",
       "clips": [
-        { "title": "emergence", "src": "/media/ambient-erosion/v1-emergence.mp4", "permalink": "" },
-        { "title": "bloom", "src": "/media/ambient-erosion/v2-bloom.mp4", "permalink": "" },
-        { "title": "return", "src": "/media/ambient-erosion/v3-return.mp4", "permalink": "" }
+        {
+          "title": "emergence",
+          "src": "/media/ambient-erosion/v1-emergence.mp4",
+          "permalink": ""
+        },
+        {
+          "title": "bloom",
+          "src": "/media/ambient-erosion/v2-bloom.mp4",
+          "permalink": ""
+        },
+        {
+          "title": "return",
+          "src": "/media/ambient-erosion/v3-return.mp4",
+          "permalink": ""
+        }
       ]
     },
     {
