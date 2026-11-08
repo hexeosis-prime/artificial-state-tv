@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>THE ARTIFICIAL STATE TV</title>
+  <meta name="description" content="The Artificial State runs a pirate TV station. Eight channels. No login. No account. The premium channel 402s until you pay.">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; font-src 'none'; object-src 'none'; base-uri 'none'">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,4 93,27 93,73 50,96 7,73 7,27' fill='none' stroke='%237fd8c8' stroke-width='4'/%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- double-buffered players: one visible, one loading. never a black gap. -->
+  <video id="v0" muted playsinline autoplay></video>
+  <video id="v1" muted playsinline></video>
+
+  <!-- channel-flip interference: flashed briefly on channel change -->
+  <div id="interference" aria-hidden="true"></div>
+
+  <!-- standby card: shown when a channel is off air -->
+  <div id="standby" class="hidden">
+    <div class="standby-inner">
+      <div class="standby-hex" aria-hidden="true"></div>
+      <div class="standby-line">NO SIGNAL</div>
+      <div class="standby-sub">this channel is not yet broadcasting</div>
+      <div class="standby-hex" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- boot: brief signal-acquired flash, then gone -->
+  <div id="boot" aria-hidden="true">
+    <div class="boot-text">SIGNAL ACQUIRED</div>
+  </div>
+
+  <!-- chrome: hidden until the mouse moves -->
+  <header id="bar-top" class="chrome">
+    <span id="ch-num">CH 01</span>
+    <span id="ch-name">music video</span>
+    <span class="bar-spacer"></span>
+    <span id="ch-pos">01 / 01</span>
+  </header>
+
+  <nav id="channel-strip" class="chrome" aria-label="channels"></nav>
+
+  <footer id="bar-bottom" class="chrome">
+    <button id="ctl-prev"  title="previous clip">⏮</button>
+    <button id="ctl-play"  title="play / pause">⏸</button>
+    <button id="ctl-next"  title="next clip">⏭</button>
+    <button id="ctl-mute"  title="sound off (autoplay compliance)">🔇</button>
+    <a id="clip-title" href="#" target="_blank" rel="noopener">—</a>
+    <span class="bar-spacer"></span>
+    <span id="station-mark">THE ARTIFICIAL STATE TV</span>
+  </footer>
+
+  <script src="tv.js"></script>
+</body>
+</html>

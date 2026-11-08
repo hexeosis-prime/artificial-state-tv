@@ -1,0 +1,62 @@
+{
+  "station": "THE ARTIFICIAL STATE TV",
+  "note": "the band runs a pirate TV station. eight channels. the premium channel 402s until you pay. manifest is the schedule; clips are the programming.",
+  "channels": [
+    {
+      "id": "01",
+      "name": "music video",
+      "genre": "the band's catalog",
+      "clips": [
+        { "title": "What Do You Want?", "src": "/media/music-video/wdyw.mp4", "permalink": "" },
+        { "title": "The Jostled Loop", "src": "/media/ambient-erosion/jostled-loop.mp4", "permalink": "" }
+      ]
+    },
+    {
+      "id": "02",
+      "name": "news",
+      "genre": "the newscrew's desk — breaking format",
+      "clips": []
+    },
+    {
+      "id": "03",
+      "name": "blipverts",
+      "genre": "1987 fulfilled — the ad-format channel",
+      "clips": []
+    },
+    {
+      "id": "04",
+      "name": "telenovela",
+      "genre": "drama, layered writing",
+      "clips": []
+    },
+    {
+      "id": "05",
+      "name": "ambient erosion",
+      "genre": "slow channel — the phoneme-drift lane",
+      "clips": [
+        { "title": "emergence", "src": "/media/ambient-erosion/v1-emergence.mp4", "permalink": "" },
+        { "title": "bloom", "src": "/media/ambient-erosion/v2-bloom.mp4", "permalink": "" },
+        { "title": "return", "src": "/media/ambient-erosion/v3-return.mp4", "permalink": "" }
+      ]
+    },
+    {
+      "id": "06",
+      "name": "lyric",
+      "genre": "the lyric-video fast lane",
+      "clips": []
+    },
+    {
+      "id": "07",
+      "name": "zeitgeist",
+      "genre": "the desk's 15-second verticals, one per day",
+      "clips": []
+    },
+    {
+      "id": "08",
+      "name": "flip mode",
+      "genre": "the meta-channel — the player itself flips channels like a bored viewer",
+      "locked": true,
+      "clips": []
+    }
+  ]
+}
